@@ -1,0 +1,17 @@
+.icon {
+    color: inherit;
+    height: 1.5rem;
+    width: 1.5rem;
+    pointer-events: all;
+    transition: color .2s ease-in-out;
+}
+
+.icon-group {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.icon-group a {
+    color: inherit;
+}

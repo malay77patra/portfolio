@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+
+:root {
+  --background: #0F172A;
+  --color: rgb(148 163 184);
+  --accent: #57D9D5;
+  --accent-low: #82e2df;
+  --primary: #e2e8f0;
+  --secondary: #64748b;
+  --tags: #2dd4bf1a;
+  --border: #e2e8f04d;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-moz-selection {
+  color: var(--background);
+  background: var(--accent);
+}
+
+::selection {
+  color: var(--background);
+  background: var(--accent);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color .2s ease-in-out;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  background-image: linear-gradient(60deg, var(--color), var(--accent));
+  background-clip: text;
+  color: transparent;
+}
+
+h4 {
+  margin: 5px 0;
+  color: var(--primary);
+}
+
+.icon:hover {
+  color: var(--accent);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.profile-sec {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 80px 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.profile-sec>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.malay-img {
+  border-radius: 50%;
+  height: 90px;
+}
+
+.desc {
+  max-width: 20rem;
+  color: var(--color);
+}
+
+.navigator a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 600;
+  pointer-events: all;
+}
+
+.navigator a:hover {
+  color: var(--accent);
+}
+
+.navigator a:hover .bar {
+  width: 3rem;
+  background-color: var(--accent);
+}
+
+.bar {
+  width: 2rem;
+  height: 1px;
+  background-color: var(--color);
+  transition: width ease-in-out 0.2s;
+}
+
+.active .bar {
+  width: 4rem;
+  background-color: var(--accent);
+}
+
+.active {
+  color: var(--accent);
+}
+
+.content {
+  padding: 0 10px;
+  padding-left: 50dvw;
+}
+
+.content p a {
+  color: var(--accent);
+}
+
+.heading {
+  font-weight: 600;
+  padding-top: 20dvh;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.content p {
+  max-width: 500px;
+  line-height: 1.5rem;
+}
+
+.h {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.round-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 16px;
+  color: var(--color);
+  box-shadow: inset 0 0 0 2px var(--color);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 20px;
+  color: var(--secondary);
+}
+
+.round-btn:hover {
+  color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #53C1DE;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.progress-item svg {
+  height: 20px;
+  width: 20px;
+}
+
+.progress-bar {
+  width: 85%;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar .name {
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+  position: absolute;
+  color: #000;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+.progress-bar div {
+  height: 100%;
+}
+
+.card-group {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  background-color: rgba(30, 41, 59, .5);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(148, 163, 184, 0.1) 0px 1px 0px 0px inset;
+}
+
+.card:hover h3 {
+  color: var(--accent-low);
+}
+
+.card .thmb {
+  height: 80px;
+  width: 142px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+}
+
+.card .time {
+  font-size: 12px;
+  color: var(--secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.desc h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 550;
+  color: var(--primary);
+}
+
+.desc p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.tags {
+  display: flex;
+  row-gap: 8px;
+  column-gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: var(--tags);
+  padding: 5px 10px;
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.mail-box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.mail-box .mail {
+  font-size: 14px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+
+  .profile-sec {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    padding-top: 50px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
