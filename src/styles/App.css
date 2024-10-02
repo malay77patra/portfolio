@@ -116,7 +116,8 @@ main {
 
 .malay-img {
   border-radius: 50%;
-  height: 90px;
+  height: 70px;
+  border: 1px solid var(--color);
 }
 
 .desc {

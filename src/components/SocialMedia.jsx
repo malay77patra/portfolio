@@ -16,7 +16,7 @@ export default function SocialMedia() {
 
     const copyMail = async () => {
         await navigator.clipboard.writeText(ORIGINAL_EMAIL);
-        setMail('Copied!')
+        setMail('copied!')
     };
 
 
@@ -29,8 +29,18 @@ export default function SocialMedia() {
                 <a href='https://www.linkedin.com/in/malay9418/'>
                     <svg className='icon' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill='currentColor' d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12 1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z" /></svg>
                 </a>
-                <a href='https://youtube.com/@itsmalay'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon" fill="currentColor" viewBox="0 0 448 512"><path d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z" /></svg>
+                <a href='https://stackoverflow.com/users/17280060/malay-patra'>
+                    <svg xmlns="http://www.w3.org/2000/svg" className='icon' viewBox="0 0 24 24">
+                        <path
+                            style={{ stroke: "none", fillRule: "nonzero", fill: "currentColor", fillOpacity: 1 }}
+                            d="M21.121 24H1.855v-8.566h2.133v6.433h14.969v-6.433h2.164Zm0 0"
+                        />
+                        <path
+                            style={{ stroke: "none", fillRule: "nonzero", fill: "currentColor", fillOpacity: 1 }}
+                            d="m6.36 14.852 10.492 2.191.441-2.105-10.496-2.192ZM7.73 9.82l9.708 4.532.906-1.93-9.707-4.559Zm2.692-4.761 8.242 6.84 1.375-1.637-8.242-6.84ZM15.742 0l-1.726 1.285 6.402 8.598 1.727-1.29ZM6.125 19.703h10.7V17.57h-10.7Zm0 0"
+                        />
+                    </svg>
+
                 </a>
             </div>
             <div className='mail-box' onClick={copyMail}>

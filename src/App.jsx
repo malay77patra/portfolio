@@ -2,7 +2,7 @@ import { Element } from 'react-scroll';
 import Navigator from './components/Nagigator';
 import SocialMedia from './components/SocialMedia';
 import Progress from './components/Progress';
-import malayPng from './assets/malay.png'
+import malayImg from './assets/malay.jpeg'
 import flameidePng from './assets/flameide.png'
 import Roundbtn from './components/Roundbtn';
 import './styles/App.css';
@@ -14,7 +14,7 @@ export default function App() {
         <section className="profile-sec">
           <div>
             <div className='profile'>
-              <img src={malayPng} alt='Profile Picture' className='malay-img' />
+              <img src={malayImg} alt='Profile Picture' className='malay-img' />
               <span>
                 <h1>Malay Patra</h1>
                 <h4>Full Stack Web Developer</h4>
