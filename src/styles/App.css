@@ -293,6 +293,7 @@ footer {
   color: var(--secondary);
   font-weight: 600;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .desc h3 {
@@ -351,6 +352,7 @@ footer {
   width: 40px;
   border-radius: 100px
 }
+
 .review-text-pfp {
   height: 40px;
   width: 40px;
