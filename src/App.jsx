@@ -6,6 +6,7 @@ import SocialMedia from './components/SocialMedia';
 import Progress from './components/Progress';
 import malayImg from './assets/malay.jpeg'
 import flameidePng from './assets/flameide.png'
+import malayPatra from './assets/malayPatra.png'
 import liveHtml from './assets/live-html.png'
 import Roundbtn from './components/Roundbtn';
 import './styles/App.css';
@@ -152,6 +153,20 @@ export default function App() {
                   <div className="desc">
                     <h3>Live-Html</h3>
                     <p>Live html editor right from your browser !</p>
+                    <div className="tags">
+                      <span className="tag">React</span>
+                      <span className="tag">Vite</span>
+                      <span className="tag">MERN</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://malaypatra.vercel.app/">
+                <div className='card'>
+                  <img src={malayPatra} className='thmb' />
+                  <div className="desc">
+                    <h3>Malay Patra, Portfolio</h3>
+                    <p>Malay Patra - Full Stack Developer, Personal portfolio using React+Vite.</p>
                     <div className="tags">
                       <span className="tag">React</span>
                       <span className="tag">Vite</span>
