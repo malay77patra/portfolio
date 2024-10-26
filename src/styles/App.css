@@ -117,11 +117,10 @@ main {
 .malay-img {
   border-radius: 50%;
   height: 70px;
-  border: 1px solid var(--color);
+  border: 2px solid var(--border);
 }
 
 .desc {
-  max-width: 20rem;
   color: var(--color);
 }
 
@@ -166,6 +165,10 @@ main {
   padding-left: 50dvw;
 }
 
+.content>div {
+  max-width: 500px;
+}
+
 .content p a {
   color: var(--accent);
 }
@@ -178,7 +181,6 @@ main {
 }
 
 .content p {
-  max-width: 500px;
   line-height: 1.5rem;
 }
 
@@ -332,6 +334,55 @@ footer {
   font-size: 14px;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.review {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.review-pfp {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px
+}
+.review-text-pfp {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  font-size: 24px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.review h2 {
+  font-size: 16px;
+  color: var(--primary);
+  margin: 0;
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
+.review>div:nth-child(2) {
+  flex: 1;
+}
+
+.stars {
+  font-size: 24px;
+  margin-top: 10px;
+  color: var(--accent);
   font-style: normal;
 }
 
