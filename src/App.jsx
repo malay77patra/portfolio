@@ -35,7 +35,7 @@ export default function App() {
             <div className='heading'>ABOUT</div>
             <p>I'm a <span className='h'>Python expert</span>. I build web apps and automation software using the <span className="h">MERN stack</span> & Python. I also integrate <span className="h">AI & GPT</span> like LLm or APIs into prebuilt softwarews, focusing on solving problems that businesses face. Over the past two years, I have been working as a freelancer, including a notable stint with Vino AI. I possess strong skills in mathematics and physics, which complement my technical expertise. I am actively seeking new opportunities to leverage my skills and help more businesses overcome their challenges.</p>
             <p>Get your issues solved now ✨</p>
-            <Roundbtn text="RESUME" link="https://drive.google.com/file/d/1SeHWLv_f2UishZONI587RHgelHmx3QQU/view?usp=sharing" />
+            <Roundbtn text="RESUME" link="https://drive.google.com/file/d/1KIIvBZnJ1M9YltAVd6pnbtVzHrXXa5u2/view?usp=sharing" />
           </Element>
           <Element name="experties">
             <div className='heading'>EXPERTIES</div>
@@ -46,7 +46,7 @@ export default function App() {
             <div className='heading'>EXPERIENCE</div>
             <div className='card-group'>
               <div className='card'>
-                <div className="time">2021 — Present</div>
+                <div className="time">2023 — Present</div>
                 <div className="desc">
                   <h3><a href='https://www.upwork.com/freelancers/malayp3?mp_source=share'>Freelancer - Python expert - AI & ML Integration - MERN Web, Upwork</a></h3>
                   <p>Experienced Full Stack Developer with expertise in Python, Node.js, React.js, and MERN stack. Skilled in crafting efficient backend systems, user-friendly frontends, and integrating AI solutions for automation. I prioritize client satisfaction and thrive on solving complex problems through innovative web development and automation.</p>
@@ -73,7 +73,7 @@ export default function App() {
                 </div>
               </div>
               <div className='card'>
-                <div className="time">2022 — 2022</div>
+                <div className="time">2023 — 2023</div>
                 <div className="desc">
                   <h3><a href="https://vinoai.com/">AI Integration Developer, Vino.ai</a></h3>
                   <p>Built an automated document generator leveraging GPT-4 API. Received a 5-star review from the client for exceptional performance and results.</p>
