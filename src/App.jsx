@@ -89,7 +89,7 @@ export default function App() {
           </Element>
           <Element name="reviews">
             <div className='heading'>REVIEWS</div>
-            <p>Below is an reviews on people say about me ?</p>
+            <p>What other people say about me?</p>
             <div className='card-group'>
               <div className="card">
                 <div className='review'>
