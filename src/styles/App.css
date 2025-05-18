@@ -414,3 +414,93 @@ footer {
     flex-direction: column;
   }
 }
+
+/* badge  */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0px var(--accent);
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--accent);
+    transform: scale(1.05);
+  }
+
+  100% {
+    box-shadow: 0 0 0px var(--accent);
+    transform: scale(1);
+  }
+}
+
+@keyframes ping {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  75% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.btn-new {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: var(--accent);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 3rem;
+  animation: pulse-glow 2s infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-new::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: var(--accent);
+  opacity: 0.5;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ping 2s infinite;
+  z-index: 0;
+}
+
+.btn-new>* {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-new:hover {
+  background: var(--accent-low);
+}
+
+.btn-new>svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-new:hover svg {
+  transform: translateX(5px);
+}
+
+.btn-new:active {
+  transform: scale(0.95);
+}
+/* badge  */
