@@ -55,7 +55,7 @@ export default function App() {
             <div className='heading'>ABOUT</div>
             <p>I'm a <span className='h'>Python expert</span>. I build web apps and automation software using the <span className="h">MERN stack</span> & Python. I also integrate <span className="h">AI & GPT</span> like LLm or APIs into prebuilt softwarews, focusing on solving problems that businesses face. Over the past two years, I have been working as a freelancer, including a notable stint with Vino AI. I possess strong skills in mathematics and physics, which complement my technical expertise. I am actively seeking new opportunities to leverage my skills and help more businesses overcome their challenges.</p>
             <p>Get your issues solved now ✨</p>
-            <Roundbtn text="RESUME" link="https://drive.google.com/file/d/1KIIvBZnJ1M9YltAVd6pnbtVzHrXXa5u2/view?usp=sharing" />
+            <Roundbtn text="RESUME" link="https://malaypatrav2.vercel.app" />
           </Element>
           <Element name="experties">
             <div className='heading'>EXPERTIES</div>
